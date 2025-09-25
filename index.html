@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent>h2 {
+            color:rgb(144, 9, 9)
+        }
+        .child h2 {
+            background-color: lightgreen;
+        }
+       
+        .sub-child + .child1{
+            background-color: lightsalmon;
+        }
+        .child > h2{
+            font-size: 100px;
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <h2>Tiger</h2>
+        <div class="child">
+            <h2>Donkey</h2>
+            <div class="sub-child">
+                <h2>monkey</h2>
+            </div>
+            <div class="child1">
+                <h1>Chimpanjee</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
